@@ -13,8 +13,8 @@ class AlbumList extends Component {
     }
 
     renderAlbums() {
-        return this.state.albums.map(album => {
-            }
+        return this.state.albums.map(album =>
+            <AlbumDetail album={album} key={album.title}/>
         );
     }
 
